@@ -1,0 +1,21 @@
+body {
+    margin:0;
+    padding:0;
+    background:#000;
+    overflow:hidden;
+}
+
+p{
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./67aa3e71-63ba-4e3b-9b9a-b5d580fbf7dc_2560x1920.jpg);
+    filter:grayscale(100%);
+    font-size: 12px;
+    text-align: justify;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    height: 100vh;
+}
