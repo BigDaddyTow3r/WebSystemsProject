@@ -20,7 +20,11 @@ $(document).on('click', '#btnDelete', function(e) {
                 }
                 else
                 {
-                    alert(res.message);
+                    Swal.fire({
+                      title: "Deleted",
+                      text: res.message,
+                      icon: "success",
+                    });
                     $('#table-information').load(location.href + " #table-information")
                 }
             }
@@ -47,7 +51,11 @@ $(document).on('submit', '#insert_data', function(e) {
                 alert(res.message);
             }
             else{
-                alert(res.message);
+                Swal.fire({
+                    title: "Inserted",
+                    text: res.message,
+                    icon: "success",
+                });
                 $("#exampleModal").modal('hide');
                 $("#insert_data")[0].reset();
                 $("#table-information").load(location.href + " #table-information")
