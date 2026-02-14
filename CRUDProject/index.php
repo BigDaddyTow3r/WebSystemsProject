@@ -9,6 +9,13 @@
     <title>CRUD Project</title>
 </head>
 <body>
+    <?php
+        include './insert-modal.php';
+    ?>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Add
+    </button>
     <table id="table-information" class="table table-striped">
         <thead>
             <tr>
@@ -48,6 +55,8 @@
             ?>
         </tbody>
     </table>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
